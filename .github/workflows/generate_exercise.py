@@ -18,7 +18,7 @@ def main(key, model_task, theme):
         sys.stdout.write("This is a test\nWith a new line")
     else:
         response = openai.chat.completions.create(
-            model="gpt-3.5-turbo-0125",
+            model="gpt-4-0125-preview",
             messages=[
                 {"role": "system", "content": "You are a teacher that wants to help a student by creating a personalized programming task that explores the same core concepts. To help the student relate it will be personalized. Here is the model task:"},
                 {"role": "assistant", "content": model},
