@@ -1,102 +1,72 @@
-# Lorem Ipsum Task
+# Bolibompa Dragons - Java Object Modeling Task
 
-For the second exercise of Lorem Ipsum programming, you are going to practice modeling objects in Java. You are going to acquaint yourself with the components of a Java class.
+Due Date: **Friday 15th September**
 
-### Deadline
-This work should be completed before the exercise, on **Friday 15th September**.
+## Instructions
+For instructions on how to do and submit the assignment, please see the assignments section of the course instructions.
 
-### Instructions
-For instructions on how to do and submit the assignment, please see the
-[assignments section of the course instructions](https://loremipsum.com/assignments).
+## Preparation
+Read and answer all questions in the module on "Looking Inside Classes," available through the course's main page or direct link.
 
-### Preparation
-
-- Read and answer all questions in Module 2: [Looking Inside Classes](https://loremipsum.com/module2)
-- Access the OLI material both via the platform or directly at this [webpage](https://loremipsum.com/programming)
-
-### Learning Goals
-
-This week's learning goals include:
+## Learning Goals
+This week focuses on:
 * Designing Java classes
-* Adding instance fields
-* Adding a constructor method
-* Creating *getters* and *setters*
-* Using the dot operator
-* Printing to the terminal
-* Using the `main` method
-* Scope (or *variable shadowing*)
+* Using instance fields
+* Writing a constructor method
+* Implementing getters and setters
+* Employing the dot operator
+* Outputting to the terminal
+* Utilizing the `main` method
+* Understanding scope and variable shadowing
 
-### Troubleshooting Guide
-If you have any questions or problems, follow this procedure: 
+## Troubleshooting Guide
+If you encounter any problems:
+1. Check the posted issues under the help section. Your question might already be answered.
+2. If not, post a new question by creating a new issue.
+3. Alternatively, seek direct help during the weekly lab sessions.
 
-1. Look at this week's posted issues. Are other students asking about your problem?
-2. If not, post a question yourself by creating a new issue. Add a descriptive title, beginning with "Task x: *summary of problem here*"
-3. Ask a TA in person during the weekly lab. Check your schedule to see when the next lab is.
+## Assignment
+In the mystical land of Bolibompa, dragons of various kinds roam freely. Your task is to model these dragons in Java. Use your imagination or refer to Bolibompa's rich lore for inspiration.
 
-We encourage you to discuss with your course friends, but **do not share answers**!
+### Exercise 2.0 Our dragon-adventure begins!
 
-### Assignment
+Start by creating a new Java file named `Dragon.java`. Define a `Dragon` class with a main method. Initialize variables to represent a Dragon's name, health points (hp), attack power, defense power, and whether it's flying or not.
 
-In the land of Lorem Ipsum, there exists a mythical creature called *Loremipsumon*. Your task at hand is to model these mythical creatures in Java! Here is a visualization to inspire your imagination:
+### Exercise 2.1 More dragons
+Create two additional dragon objects. Examine and discuss scalability and maintenance issues with this approach.
 
-```
-![Loremipsumons](images/Loremipsumons.png)
-```
+### Exercise 2.2 -- Fields
+Transition from local variables in the main method to class fields. Write a main method that creates a `Dragon` object and assigns it properties using these fields.
 
-Next, let's move on to creating *Loremipsumon* objects in Java.
+### Exercise 2.3 -- Getters and Setters
+Implement accessors and mutators for the Dragon class fields to practice encapsulation.
 
-#### Exercise 2.0 - Getting Started
+### Exercise 2.4 -- Constructor
+Define a constructor for the `Dragon` class that allows setting all the dragon properties at the object creation stage.
 
-Create a new Java file called `Loremipsumon.java` in the `src` folder. Define the class `Loremipsumon` within it. Add a main method and delve into creating your very first Loremipsumon object. 
+### Exercise 2.5 -- More dragons, (again)
+Use the constructor to create multiple dragon objects efficiently.
 
-In the main method, create variables for the following attributes of a Loremipsumon: 
-- `String` name 
-- `int` healthPoints (HP) 
-- `int` power 
-- `int` defense 
-- `boolean` fainted 
+### Exercise 2.6 -- `printInfo()`
+Implement a method called `printInfo` within the Dragon class, to neatly print a dragon's details to the terminal.
 
-#### Exercise 2.1 - More Creatures
+### Exercise 2.7 -- Dragon, breathe fire!
+Add a method that models dragons breathing fire at each other. This method should take another dragon object as a parameter to represent the target.
 
-Expand your knowledge by creating two more Loremipsumon objects using the same approach as in Exercise 2.0. 
+### Exercise 2.8 -- Variable Shadowing
+Investigate and provide solutions for variable shadowing within your Dragon class, especially focusing on the constructor and methods.
 
-#### Exercise 2.2 - Fields
+## Checklist
+* Initialize multiple dragons in the main method (optional).
+* Use fields in the Dragon class to represent name, hp, attack, defense, and flying status.
+* Utilize getters and setters to access and modify dragon attributes.
+* Build a constructor for detailed and efficient dragon object creation.
+* Design a `printInfo` method to display dragon details.
+* Add a "breathe fire" interaction method between dragons.
+* Study and address variable shadowing within your class.
 
-Implement fields for the Loremipsumon class with the attributes mentioned in Exercise 2.0. Test modifying their values directly using the dot operator on a Loremipsumon object.
+## Bugs and Errors
+If you find any inconsistencies or errors in this task, please report them by creating a new issue.
 
-#### Exercise 2.3 - Getters and Setters
-
-Create getter and setter methods for all fields in the Loremipsumon class. Use these methods to access and modify the values of the Loremipsumon objects.
-
-#### Exercise 2.4 - Constructor
-
-Introduce a constructor method for the Loremipsumon class. Create a few Loremipsumon objects using the constructor. Use the constructor method to set initial values for the Loremipsumon attributes.
-
-#### Exercise 2.5 - Printing Info
-
-Implement a method called `printInfo()` in the Loremipsumon class to display all information about a Loremipsumon object in a structured manner.
-
-#### Exercise 2.6 - Friendly Interaction
-
-Add a method called `interact()` in the Loremipsumon class to simulate a friendly interaction between Loremipsumons. Print the interaction messages to the console.
-
-#### Exercise 2.7 - Exploring Encapsulation
-
-Dig deeper into encapsulation by setting appropriate access modifiers for the fields of the Loremipsumon class. Modify the methods and variables to adhere to encapsulation principles.
-
-### Checklist 
-- [ ] Create three Loremipsumon objects directly in the main method and print their information to the console.
-- [ ] Define and use fields for the Loremipsumon class to store information about each creature.
-- [ ] Implement getters and setters for each field to access and modify the Loremipsumon attributes.
-- [ ] Create a constructor method for the Loremipsumon class and use it to initialize multiple objects.
-- [ ] Develop a `printInfo()` method to display all information of a Loremipsumon object.
-- [ ] Create an `interact()` method for friendly interactions between Loremipsumons.
-- [ ] Apply encapsulation principles with appropriate access modifiers for the class fields and methods.
-
-### Bugs and Errors
-If you find any inconsistencies or errors in this exercise, please open a [New Issue](https://loremipsum.com/issues/new) with the title "Task x Error: summary of error here". Found bugs will be acknowledged in the acknowledgment section.
-
-### Acknowledgment
-This task was customized for you by your programming guide for Lorem Ipsum exercises.
-
-Proofreading & Bug fixes by Lorem Ipsum Lorem and Lorem Ipsum Ipsum.
+## Acknowledgment
+This task was crafted by the course team. Please recognize their effort in preparing this exercise designed to enhance your understanding of Java and object-oriented programming concepts.
